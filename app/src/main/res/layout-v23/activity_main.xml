@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:paddingBottom="16dp"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -16,16 +16,16 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/askButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="104dp"
+            android:background="@color/colorPrimary"
             android:elevation="0dp"
             android:hapticFeedbackEnabled="true"
             android:text="@string/button_text"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
@@ -43,7 +43,8 @@
             android:text="@string/textBox_text"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <RelativeLayout
@@ -54,10 +55,11 @@
         android:gravity="center">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/image_eightBall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/ball3" android:contentDescription="TODO" />
+            android:contentDescription="TODO"
+            android:src="@drawable/ball3" />
 
     </RelativeLayout>
 
